@@ -2,7 +2,6 @@
 apps/
 frontend/
 backend/
-_workspace/
 .env
 **/*/.env
 
