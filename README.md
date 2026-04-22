@@ -209,16 +209,17 @@ ORM은 JPA를 사용해서 테이블이 없을 경우 자동 생성되도록 설
 ### E2E (End to End) 테스트 및 디버깅
 
 ```
-application.yml 파일에 db 접속정보 입력했고, 
-prototype 소스도 vs code - live server 띄워서 
-`http://127.0.0.1:5500/docs/prototype/yt_resort/index.html`로 확인 가능해. 
+application.yml에 DB 접속 정보는 이미 입력해뒀고,
+prototype 소스는 VS Code Live Server로 실행해서
+`http://127.0.0.1:5500/docs/prototype/yt_resort/index.html`에서 확인할 수 있어.
 
-chrome claude code 확장 프로그램 설치 되어있으니까
-backend, frontend 사용중인 포트는 너가 알아서 죽여가면서
-서버를 너가 알아서 띄우면서 
-chrome-devtools-mcp 도구로 시나리오 테스트해줘
-모든 페이지 테스트하면서 다른 부분이나 버그/콘솔에러 등 모두 디버깅 진행해줘
+Chrome Claude Code 확장 프로그램도 설치되어 있으니까,
+backend랑 frontend 포트는 필요한 경우 알아서 정리(종료)해가면서 서버 띄워주고,
+chrome-devtools-mcp로 시나리오 테스트 진행해줘.
 
-혹시 db 접속 정보 잘못 입력해서 db 연결 안되면 다시 알려주고!
+전체 페이지를 한 번씩 다 돌면서 확인하고,
+이상한 동작이나 버그, 콘솔 에러 같은 부분은 전부 디버깅해주면 좋겠어.
+
+혹시 DB 접속 정보 문제로 연결 안 되면 그 부분도 알려줘.
 ```
 
